@@ -1,0 +1,41 @@
+.mainNav {
+    width: 100%;
+    height: 5rem;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 2rem 3fr 2fr 1fr 5rem;
+}
+
+.myLogo {
+    display: grid;
+    background-color: rosybrown;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+.menuLink{
+grid-column: 3/4;
+}
+.menuLink ul{
+    list-style: none;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuLink ul a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.mediaLink{
+    grid-column: 4/5;
+   
+}
+.mediaLink ul{
+  list-style: none;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
