@@ -6,6 +6,7 @@ import mountainB from "./images/mountains_behind.png";
 import main from "./images/main-img.png";
 import "./Section.css";
 import { useState } from "react";
+// import Section2 from "./Section2";
 // import { Link } from 'react-scroll';
 
 const Section = () => {
@@ -47,28 +48,7 @@ const Section = () => {
         />
       </section>
   
-        <div className="sec" id="sec">
-          <img src={main} alt="me" />
-          <div className="about-text">
-            <h2>About Me</h2>
-            <h5>developer and designer</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-              culpa tempore, iusto corrupti vero et blanditiis, odit non ex
-              numquam ipsa nesciunt neque? Modi eum nobis nostrum amet, fuga
-              aperiam dolore dolores recusandae doloremque, magnam pariatur at
-              optio necessitatibus quae facere ex iure eius reiciendis. Veniam
-              quidem ea esse ratione.
-
-            </p>
-            <div className="hireBtn">
-            <button>Lets talk </button>
-            <button>Resume</button>
-
-            </div>
-
-          </div>
-        </div>
+     
      
     </>
   );
