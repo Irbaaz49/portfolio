@@ -6,7 +6,8 @@ import {
   } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import './Timeline.css';
-import css  from './images/css.png'
+// import achieve from './images/5891.jpg';
+
 function Timeline() {
     let workIconStyles = {background :'#06D6A0'};
     let schoolIconStyles = {background :'#F9C74F'};
@@ -16,6 +17,8 @@ function Timeline() {
         <>
         <div className='education' >
         <h2 className='education-heading'>Eduction</h2>
+        {/* <img src={achieve} alt="d" /> */}
+
         <VerticalTimeline>
             {
                 timelineElements.map(element => {
@@ -29,12 +32,14 @@ function Timeline() {
                         dateClassName="date"
                         iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                         icon={isWorkIcon ? <FaLaptopCode/> : <FaGraduationCap/> }
-                        
+                      
                         >
+                            
                             <h3 className='vertical-timeline-element-title'>{element.title}</h3>
                          <h5 className='vertical-timeline-element-subtitle'>{element.location}</h5>
                     <p id='description'>{element.description}</p>
                    <p>{element.buttonText}</p>
+                
                     </VerticalTimelineElement>
                     )
                 })

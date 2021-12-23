@@ -1,0 +1,50 @@
+import React from 'react'
+import './Project.css';
+const Projects = () => {
+    return (
+        <div class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-1.jpeg" alt=""/>
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt=""/>
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-3.jpeg" alt=""/>
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpeg" alt=""/>
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt=""/>
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    )
+}
+
+export default Projects

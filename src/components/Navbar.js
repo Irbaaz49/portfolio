@@ -8,6 +8,8 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import "./Navbar.css";
 
 const Navbar = () => {
+  let i = "</I";
+  let h = "H>";
   const[showMediaIcons, setShowMediaIcons] = useState(false);
   return (
   
@@ -16,8 +18,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>!I</span>
-            <span>H</span>
+            <span> {i}</span>
+            <span>{h}</span>
           </h2>
         </div>
 
@@ -34,7 +36,7 @@ const Navbar = () => {
               <a to="/about">about</a>
             </li>
             <li>
-              <a to="/service">services</a>
+              <a to="/service">Work</a>
             </li>
             <li>
               <a to="/contact">contact</a>
@@ -71,7 +73,7 @@ const Navbar = () => {
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
             <a htmlFor="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
+              <GiHamburgerMenu style={{color:"whitesmoke"}}/>
             </a>
           </div>
         </div>

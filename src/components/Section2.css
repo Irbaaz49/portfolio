@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +7,7 @@
     justify-content: space-between;
 
 }
+
 .about{
     
     background: #1c0522;
@@ -23,41 +26,56 @@ div .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-top: 30px;
+    letter-spacing: 1px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    color: #edc2c2;
+
 }
 .about .about-content .left{
-    width: 45%;
+    width: 35%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 367px;
+    width: 367px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
+  
+    margin-left: 28px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 63%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 27px;
+    margin-top: -72px;
     font-weight: 600;
-    margin-bottom: 10px;
+    font-family: 'Prata', serif;
+    color: whitesmoke;
+    margin-bottom: 28px;
 }
 .about .about-content .right .text span{
     color: crimson;
 }
 .about .about-content .right p{
     text-align: justify;
+    font-size: 1.8em;
+    margin-right: 20px;
+    font-family: 'Prata', serif;
+    color: white;
 }
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
+    font-family: 'Prata', serif;
+    
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 6px 7px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
@@ -98,4 +116,48 @@ div .title{
     .about .about-content .right{
         flex: 100%;
     }
+}
+@media (max-width: 520px) {
+
+div .title{
+font-size: 28px;
+}
+.about .about-content .left img{
+    height: 310px;
+    width: 326px;
+    object-fit: cover;
+    border-radius:14%;
+    margin-left: -6px;
+}
+.about .about-content .right .text {
+    margin-top: 9px;
+    font-size: 24px;
+    margin-bottom: 51px;
+}
+.about .about-content .right p{
+text-align: center;
+    font-size: 1.8em;
+    margin-right: 20px;
+    font-family: 'Prata', serif;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 83px;
+}
+.about .about-content .right a{
+display: inline-block;
+background: crimson;
+font-family: 'Prata', serif;
+color: #fff;
+font-size: 17px;
+position: relative;
+/* margin-right: 29px; */
+left: 79px;
+font-weight: 400;
+margin-bottom: 57px;
+padding: 6px 24px;
+margin-top: 12px;
+border-radius: 6px;
+border: 2px solid crimson;
+transition: all 0.3s ease;
+}
 }

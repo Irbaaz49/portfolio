@@ -1,3 +1,5 @@
+
+
 let timelineElements = [
     {
         id: 1,
@@ -8,6 +10,7 @@ let timelineElements = [
         buttonText: "6.9",
         date: "2020",
         icon: "school",
+     
       },
     {
       id: 2,
