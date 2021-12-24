@@ -19,7 +19,7 @@ const Section2 = () => {
                   <div className="text"> I'm Mohd Irbaaz Hussain, <span className="typing-2">
                   </span>Self learned front end developer</div>
                   <p>{bio}</p>
-                  <a href="/">Hire Me</a>
+                  <a href="/">Hire me</a>
               </div>
           </div>
       </div>

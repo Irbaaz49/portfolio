@@ -11,12 +11,13 @@ import './Timeline.css';
 function Timeline() {
     let workIconStyles = {background :'#06D6A0'};
     let schoolIconStyles = {background :'#F9C74F'};
+    let education = "< Education />"
 
 
     return (
         <>
         <div className='education' >
-        <h2 className='education-heading'>Eduction</h2>
+        <h2 className='education-heading'>{education}</h2>
         {/* <img src={achieve} alt="d" /> */}
 
         <VerticalTimeline>
