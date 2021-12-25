@@ -1,27 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* 
 body{
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /* background: linear-gradient(#2b1055,#7597de); */
-}
+  
+} */
 .contact{
-    background-color: black;
+    background: linear-gradient(#7496dd,#d8d3bd);
+    margin-top: -1px;
     z-index: 1000;
+
+}
+.contact .title{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 .contact .contact-content{
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+.contact .left, .contact .right{
+    font-family: 'Prata', serif;
+
+}
+.contact .left{
+    padding-left: 50px;
+}
+.contact .right{
+    padding-right: 50px;
+}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -43,9 +68,14 @@ body{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 6px;
+    letter-spacing: 1px;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
+    font-size: 1.8em;
+    letter-spacing: 1px;
 }
 .contact .right form .fields{
     display: flex;
@@ -118,7 +148,32 @@ body{
 .contact .right form .name,
 .contact .right form .email{
     margin: 0;
-}}
+}
+.contact .right form .field, .contact .right form .fields .field {
+    margin-left: 15px;
+}
+.contact .left{
+    padding-left: 0px;
+}
+.contact .contact-content .info .sub-title{
+    font-size: 1.3em;
+}
+.contact .title{
+    font-size: 25px;
+    padding-bottom: 0px;
+}
+
+.right form .button-area button {
+    margin-left: 16px;
+    width: 107px!important;
+    font-size: 15px;
+}
+.contact .right {
+    padding-right: 11px;
+}
+
+
+}
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section2.css";
-import pic from "./images/main-img.png";
+import pic from "./images/picmy.png";
 // import Typewriter from 'typewriter-effect/dist/core';
 const Section2 = () => {
   let about = "<About Me/>";

@@ -3,6 +3,7 @@
 
 .education{
      background: #1c0522;
+     margin-top: -1px;
      
 }
 
@@ -20,9 +21,11 @@
   
 
 }
-.vertical-timeline-element-content {
-    font-family: 'Poppins', sans-serif;
 
+.vertical-timeline-element-content {
+    font-family: 'Prata', serif;
+    letter-spacing: 2px;
+font-size: 1.5rem;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.25); 
 padding: 2em 3em ;
 
@@ -40,6 +43,18 @@ padding: 2em 3em ;
 
 
 }
+.vertical-timeline-element-content p {
+    margin: 1em 0 0;
+    line-height: 1.6;
+    font-size: 1em;
+}
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    float: left;
+    padding: 0.8em 0;
+    opacity: .7;
+    font-size: 1em;
+}
+
 .vertical-timeline-element-content:hover{
 background-color: var(--glow-color);
 box-shadow: 0 0 1em .25em var(--glow-color),
@@ -53,9 +68,27 @@ box-shadow: 0 0 1em .25em var(--glow-color),
 .vertical-timeline-element-icon:hover{
     padding: 25px;
 }
+.skills{
+    margin-top: -1px;
+}
+.skills .title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-family: 'Fredoka One' cursive;
+}
+.skills{
+    background: linear-gradient(#1c0522,#4b3474);
+}
 .skills-content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -85,7 +118,7 @@ box-shadow: 0 0 1em .25em var(--glow-color),
     background: none;
 }
 .skills .skills-content .right .bars{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 .skills .skills-content .right .info{
     display: flex;
@@ -96,6 +129,7 @@ box-shadow: 0 0 1em .25em var(--glow-color),
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
+    padding-bottom: 10px;
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -112,10 +146,10 @@ box-shadow: 0 0 1em .25em var(--glow-color),
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 40%;
 }
 .skills-content .right .js::before{
     width: 80%;
@@ -124,5 +158,24 @@ box-shadow: 0 0 1em .25em var(--glow-color),
     width: 50%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 75%;
+}
+
+@media (max-width: 520px) {
+    .education-heading{
+        font-size: 25px;
+    }
+    .vertical-timeline{
+        width: 85%;
+    }
+    .skills .title{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .skills-content{
+        padding-left:0px ;
+        padding-right: 0px;
+    }
+    .skills .skills-content .column {
+        width: calc(56% - -96px);}
 }

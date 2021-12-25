@@ -1,39 +1,42 @@
 import React from 'react';
 import "./Contact.css"
-
+import {
+   FaAddressBook,FaPhoneSquare, FaEnvelope, FaUser
+  } from "react-icons/fa";
 
 const Contact = () => {
+    let contact= "< Contact Me />"
   
     return (
         <>
              <div className="contact" id="contact">
                 
         <div className="max-width">
-            <h2 className="title">Contact me</h2>
+            <h2 className="title">{contact}</h2>
             <div className="contact-content">
                 <div className="column left">
-                    <div className="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div className="text">Get in Touch <FaAddressBook style={{fontSize:"20px", color:"crimson"}}/></div>
+                    {/* <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p> */}
                     <div className="icons">
                         <div className="row">
-                            <i className="fas fa-user"></i>
+                            <i ><FaUser/></i>
                             <div className="info">
                                 <div className="head">Name</div>
-                                <div className="sub-title">Prakash Shahi</div>
+                                <div className="sub-title">Md. Irbaaz Hussain</div>
                             </div>
                         </div>
                         <div className="row">
-                            <i className="fas fa-map-marker-alt"></i>
+                            <i ><FaPhoneSquare/></i>
                             <div className="info">
-                                <div className="head">Address</div>
-                                <div className="sub-title">Surkhet, Nepal</div>
+                               <div className="head">Phone </div>
+                               <a href="tel:+917660963597">   <div className="sub-title">7660963597</div> </a>
                             </div>
                         </div>
                         <div className="row">
-                            <i className="fas fa-envelope"></i>
+                            <i ><FaEnvelope/></i>
                             <div className="info">
-                                <div className="head">Email</div>
-                                <div className="sub-title">abc@gmail.com</div>
+                                <div className="head">Email </div>
+                             <a href="mailto:irbaazhussain49@gmail.com">  <div className="sub-title">irbaazhussain49@gmail.com</div></a> 
                             </div>
                         </div>
                     </div>

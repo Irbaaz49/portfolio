@@ -1,18 +1,37 @@
-.teams .title::after{
-    content: "who with me";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.teams{
+    margin-top: -1px;
 }
+
 .carousel{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Prata', serif;
+    font-weight: 500;
+
 }
+.teams .title{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
+    margin: 15px;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
@@ -44,24 +63,16 @@
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
+.teams .max-width{
+    background: linear-gradient(#493272,#7597de);
 }
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
+@media (max-width: 520px) {
+
+    .teams .title{
+        font-size: 25px;
+        padding-bottom: 0px;
+    }
+    .teams .carousel .card{
+        margin-bottom: 15px;
+    }    
 }

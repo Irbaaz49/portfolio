@@ -2,7 +2,7 @@ import React from 'react'
 import timelineElements from './TimelineElement';
 import{VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import {
-    FaGraduationCap,FaLaptopCode,FaHtml5
+    FaGraduationCap,FaLaptopCode,FaHtml5,FaCss3,FaJs,FaGit,FaGithub,FaReact,FaNodeJs
   } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import './Timeline.css';
@@ -11,8 +11,8 @@ import './Timeline.css';
 function Timeline() {
     let workIconStyles = {background :'#06D6A0'};
     let schoolIconStyles = {background :'#F9C74F'};
-    let education = "< Education />"
-
+    let education = "< Education />";
+let skills ="< My Skills />";
 
     return (
         <>
@@ -50,7 +50,7 @@ function Timeline() {
 
         <div className="skills" id="skills">
         <div className="max-width">
-            <h2 className="title">My skills</h2>
+            <h2 className="title">{skills}</h2>
             <div className="skills-content">
             
                 <div className="column right">
@@ -63,29 +63,29 @@ function Timeline() {
                     </div>
                     <div className="bars">
                         <div className="info">
-                            <span>CSS</span>
-                            <span>60%</span>
+                            <span>Node Js</span>
+                            <span><FaNodeJs/></span>
                         </div>
                         <div className="line css"></div>
                     </div>
                     <div className="bars">
                         <div className="info">
                             <span>JavaScript</span>
-                            <span>80%</span>
+                            <span><FaJs/></span>
                         </div>
                         <div className="line js"></div>
                     </div>
                     <div className="bars">
                         <div className="info">
-                            <span>GIT</span>
-                            <span>50%</span>
+                            <span>React</span>
+                            <span><FaReact/></span>
                         </div>
                         <div className="line php"></div>
                     </div>
                     <div className="bars">
                         <div className="info">
                             <span>GITHUB</span>
-                            <span>70%</span>
+                            <span><FaGithub/></span>
                         </div>
                         <div className="line mysql"></div>
                     </div>
@@ -93,39 +93,26 @@ function Timeline() {
                 <div className="column right">
                     <div className="bars">
                         <div className="info">
-                            <span>React Js</span>
-                            <span><FaHtml5/></span>
+                            <span>CSS</span>
+                            <span><FaCss3/></span>
                         </div>
                         <div className="line html"></div>
                     </div>
                     <div className="bars">
                         <div className="info">
-                            <span>Node Js</span>
-                            <span>60%</span>
+                            <span>Mongo db</span>
+                            <span></span>
                         </div>
                         <div className="line css"></div>
                     </div>
                     <div className="bars">
                         <div className="info">
-                            <span>Mongo db</span>
-                            <span>80%</span>
+                            <span>GIT</span>
+                            <span><FaGit/></span>
                         </div>
                         <div className="line js"></div>
                     </div>
-                    <div className="bars">
-                        <div className="info">
-                            <span>PHP</span>
-                            <span>50%</span>
-                        </div>
-                        <div className="line php"></div>
-                    </div>
-                    <div className="bars">
-                        <div className="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div className="line mysql"></div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
