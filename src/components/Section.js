@@ -37,7 +37,7 @@ const Section = () => {
         <h2 id="text" style={{ marginRight: offSet * 6 + "px" }}>
           Hello, Im Md.Irbaaz Hussain
         </h2>
-        <a htmlFor="sec" style={{ marginTop: offSet * 1.5 + "px" }} id="btn">
+        <a href="#about" style={{ marginTop: offSet * 1.5 + "px" }} id="btn">
           Explore
         </a>
         <img

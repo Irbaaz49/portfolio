@@ -30,16 +30,16 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <a to="/">Home</a>
+              <a href="#App">Home</a>
             </li>
             <li>
-              <a to="/about">about</a>
+              <a href="#about">about</a>
             </li>
             <li>
-              <a to="/service">Work</a>
+              <a href="#teams">Work</a>
             </li>
             <li>
-              <a to="/contact">contact</a>
+              <a href="#contact">contact</a>
             </li>
           </ul>
         </div>
